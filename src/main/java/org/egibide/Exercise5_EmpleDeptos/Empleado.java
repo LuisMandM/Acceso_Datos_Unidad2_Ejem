@@ -1,12 +1,12 @@
 package org.egibide.Exercise5_EmpleDeptos;
 
 public class Empleado {
-    private int idEmpleado;
+    private Integer idEmpleado;
     private String Apellido;
     private String puesto;
-    private Departamento departamento;
+    private Integer departamento;
 
-    public Empleado(int idEmpleado, String apellido, String puesto, Departamento departamento) {
+    public Empleado(Integer idEmpleado, String apellido, String puesto, Integer departamento) {
         this.idEmpleado = idEmpleado;
         Apellido = apellido;
         this.puesto = puesto;
@@ -16,11 +16,12 @@ public class Empleado {
     public Empleado() {
     }
 
+
     public int getIdEmpleado() {
         return idEmpleado;
     }
 
-    public void setIdEmpleado(int idEmpleado) {
+    public void setIdEmpleado(Integer idEmpleado) {
         this.idEmpleado = idEmpleado;
     }
 
@@ -40,11 +41,11 @@ public class Empleado {
         this.puesto = puesto;
     }
 
-    public Departamento getDepartamento() {
+    public int getDepartamento() {
         return departamento;
     }
 
-    public void setDepartamento(Departamento departamento) {
+    public void setDepartamento(Integer departamento) {
         this.departamento = departamento;
     }
 }
